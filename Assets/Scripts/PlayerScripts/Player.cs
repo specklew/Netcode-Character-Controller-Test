@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace PlayerScripts
 {
+    [RequireComponent(typeof(PlayerMovement))]
     public class Player : NetworkBehaviour
     {
         [Header("Movement")] [Tooltip("Move speed of the character in m/s")]
@@ -29,15 +30,12 @@ namespace PlayerScripts
         private Camera _camera;
         private CharacterController _controller;
         private AudioListener _listener;
-        private PlayerMovement _movement;
-        
+
         public override void OnNetworkSpawn()
         {
-            _animator = GetComponentInChildren<Animator>();
             _camera = GetComponentInChildren<Camera>();
-            _controller = GetComponent<CharacterController>();
             _listener = GetComponentInChildren<AudioListener>();
-            _movement = GetComponent<PlayerMovement>();
+            _controller = GetComponent<CharacterController>();
 
             if (IsOwner) return;
         
@@ -59,7 +57,7 @@ namespace PlayerScripts
         
         private void UpdateClient()
         {
-            if(!IsOwner) return;
+            if(!IsClient) return;
         }
     }
 }
