@@ -1,4 +1,3 @@
-using System;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -135,7 +134,7 @@ namespace PlayerScripts
             transform.Rotate(0, mouseX, 0);
 
             UpdateHeadRotationServerRPC(_pitch);
-            cameraTransform.rotation = Quaternion.Euler(_pitch, 0, 0);
+            cameraTransform.localRotation = Quaternion.Euler(_pitch, 0, 0);
         }
         
         
