@@ -37,10 +37,16 @@ namespace PlayerScripts
             _listener = GetComponentInChildren<AudioListener>();
             _controller = GetComponent<CharacterController>();
 
+            //TODO: Refactor to make it more readable
+            
             if (IsOwner) return;
-        
-            Destroy(_camera.gameObject);
+
+            _camera.enabled = false;
             Destroy(_listener);
+
+            if (IsServer) return;
+            
+            Destroy(_camera.gameObject);
             Destroy(_controller);
         }
 

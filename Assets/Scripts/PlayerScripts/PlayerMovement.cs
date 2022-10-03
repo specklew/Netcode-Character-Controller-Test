@@ -11,7 +11,7 @@ namespace PlayerScripts
         [Header("References")]
         [SerializeField] private Transform cameraTransform;
         [SerializeField] private Transform playerHead;
-        
+
         private float _speed;
         private float _animationBlend;
         private float _targetRotation;
@@ -39,6 +39,8 @@ namespace PlayerScripts
         private static readonly int VelocityX = Animator.StringToHash("velocity_x");
         private static readonly int VelocityY = Animator.StringToHash("velocity_y");
 
+        private NetworkVariable<float> headRotation = new();
+
         private void Awake()
         {
             _player = GetComponent<Player>();
@@ -53,6 +55,11 @@ namespace PlayerScripts
 
         private void Update()
         {
+            if (IsServer)
+            {
+                UpdateServer();    
+            }
+            
             if(!IsOwner) return;
             
             HandleInput();
@@ -62,9 +69,14 @@ namespace PlayerScripts
         {
             if(!IsOwner) return;
             
-            Move();
             Jump();
-            Look();
+            MoveClient();
+            LookClient();
+        }
+
+        private void UpdateServer()
+        {
+            playerHead.localRotation = Quaternion.Euler(headRotation.Value, 0, 0);
         }
 
         private void HandleInput()
@@ -73,30 +85,25 @@ namespace PlayerScripts
             _inputSprint = _input.sprint;
             _inputJump = _input.jump;
             _inputMove = _input.move;
-            //There once was analog movement here, but no mo!
+            //TODO: Add analog movement handling
         }
-    
-        private void Move()
+
+        private void MoveClient()
         {
             _speed = _inputSprint ? _player.sprintSpeed : _player.moveSpeed;
 
             Vector3 inputDirection = new Vector3(_inputMove.x, 0.0f, _inputMove.y).normalized;
             inputDirection = transform.TransformDirection(inputDirection);
-            
-            _controller.Move(inputDirection * (_speed * Time.deltaTime) +
-                             new Vector3(0,_verticalVelocity,0) * Time.deltaTime);
+
+            Vector3 movementDirection = inputDirection * (_speed * Time.deltaTime) + 
+                                        new Vector3(0, _verticalVelocity, 0) * Time.deltaTime;
+
+            _controller.Move(movementDirection);
 
             //Send animation data to server.
             AnimatePlayerServerRPC(new Vector2(
                 _speed * inputDirection.magnitude,
                 _verticalVelocity * (_controller.isGrounded ? 0 : 1)));
-        }
-
-        [ServerRpc]
-        private void AnimatePlayerServerRPC(Vector2 velocity)
-        {
-            _animator.SetFloat(VelocityX, velocity.x);
-            _animator.SetFloat(VelocityY, velocity.y);
         }
 
         private void Jump()
@@ -117,19 +124,32 @@ namespace PlayerScripts
             }
         }
     
-        private void Look()
+        private void LookClient()
         {
             float mouseX = _inputLook.x * _player.mouseSensitivity * 0.022f;
             float mouseY = _inputLook.y * _player.mouseSensitivity * 0.022f;
 
-            transform.Rotate(0, mouseX, 0);
-
             _pitch -= mouseY;
             _pitch = Mathf.Clamp(_pitch, _player.minPitch, _player.maxPitch);
 
-            Quaternion rot = Quaternion.Euler(_pitch, 0, 0);
-            cameraTransform.localRotation = rot;
-            playerHead.localRotation = rot;
+            transform.Rotate(0, mouseX, 0);
+
+            UpdateHeadRotationServerRPC(_pitch);
+            cameraTransform.rotation = Quaternion.Euler(_pitch, 0, 0);
+        }
+        
+        
+        [ServerRpc]
+        private void AnimatePlayerServerRPC(Vector2 velocity)
+        {
+            _animator.SetFloat(VelocityX, velocity.x);
+            _animator.SetFloat(VelocityY, velocity.y);
+        }
+
+        [ServerRpc]
+        private void UpdateHeadRotationServerRPC(float rotation)
+        {
+            headRotation.Value = rotation;
         }
     }
 }
