@@ -62,15 +62,16 @@ namespace PlayerScripts
             if(!IsOwner) return;
             
             HandleInput();
+            Jump();
+            MoveClient();
+            LookClient();
         }
 
         private void FixedUpdate()
         {
             if(!IsOwner) return;
             
-            Jump();
-            MoveClient();
-            LookClient();
+
         }
 
         private void UpdateServer()
