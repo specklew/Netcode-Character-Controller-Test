@@ -18,14 +18,13 @@ namespace PlayerScripts
         private float _verticalVelocity;
     
         private float _fallTimeoutDelta;
-
-        private Animator _animator;
+        
         private CharacterController _controller;
-        private Camera _camera;
         private AudioListener _listener;
         private Player _player;
         private PlayerManagerInput _input;
 
+        private Animator _animator;
         private bool _hasAnimator;
         private Vector2 _inputLook;
         private bool _inputSprint;
@@ -43,8 +42,8 @@ namespace PlayerScripts
         private void Awake()
         {
             _player = GetComponent<Player>();
-            _controller = GetComponent<CharacterController>();
             _animator = GetComponentInChildren<Animator>();
+            _controller = GetComponent<CharacterController>();
         }
 
         private void OnEnable()
