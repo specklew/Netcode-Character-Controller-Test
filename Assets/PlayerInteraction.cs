@@ -1,6 +1,5 @@
 using PlayerScripts;
 using Unity.Netcode;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Player))]
@@ -27,14 +26,15 @@ public class PlayerInteraction : NetworkBehaviour
             //Disable highlight on the last collider.
             if (_lastCollider != null)
             {
-                if (_lastCollider.TryGetComponent(out InteractableObject interact1))
+                InteractableObject interact1 = _lastCollider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+                if (interact1 != null)
                 {
                     interact1.DisableHighlight();
                 }
             }
             
-            //Enable highlight on the new one.
-            if (hit.collider.TryGetComponent(out InteractableObject interact2))
+            InteractableObject interact2 = hit.collider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+            if (interact2 != null)
             {
                 interact2.EnableHighlight();
             }
@@ -46,9 +46,10 @@ public class PlayerInteraction : NetworkBehaviour
             if (_lastCollider == null) return;
             
             //If the raycast leaves the collider disable highlight.
-            if (_lastCollider.TryGetComponent(out InteractableObject interactableObject))
+            InteractableObject interact = _lastCollider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+            if (interact != null)
             {
-                interactableObject.DisableHighlight();
+                interact.DisableHighlight();
             }
 
             _lastCollider = null;

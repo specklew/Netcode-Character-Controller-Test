@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    private Renderer _renderer;
+    private Renderer[] _renderers;
     
     private Material _outlineMaterial;
     private Material _emptyMaterial;
 
     private void Awake()
     {
-        _renderer = GetComponentInChildren<Renderer>();
+        _renderers = GetComponentsInChildren<Renderer>();
 
         _outlineMaterial = Resources.Load<Material>("Materials/OutlineMaterial");
         _emptyMaterial = Resources.Load<Material>("Materials/EmptyMaterial");
@@ -22,25 +22,34 @@ public class InteractableObject : MonoBehaviour
 
     private void AddOutlineMaterialToRenderer()
     {
-        Material[] materials = new Material[_renderer.materials.Length + 1];
-        
-        for (int i = 1; i <= _renderer.materials.Length; i++)
+        foreach (Renderer r in _renderers)
         {
-            materials[i] = _renderer.materials[i - 1];
-        }
+            Material[] materials = new Material[r.materials.Length + 1];
         
-        _renderer.materials = materials;
-        _renderer.material = _emptyMaterial;
+            for (int i = 1; i <= r.materials.Length; i++)
+            {
+                materials[i] = r.materials[i - 1];
+            }
+        
+            r.materials = materials;
+            r.material = _emptyMaterial;
+        }
     }
 
     public void EnableHighlight()
     {
-        _renderer.material = _outlineMaterial;
+        foreach (Renderer r in _renderers)
+        {
+            r.material = _outlineMaterial;  
+        }
     }
 
     public void DisableHighlight()
     {
-        _renderer.material = _emptyMaterial;
+        foreach (Renderer r in _renderers)    
+        {
+            r.material = _emptyMaterial;
+        }
     }
     
     public void Interact()
