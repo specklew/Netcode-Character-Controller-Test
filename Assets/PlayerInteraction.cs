@@ -1,5 +1,6 @@
 using PlayerScripts;
 using Unity.Netcode;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Player))]
@@ -8,6 +9,7 @@ public class PlayerInteraction : NetworkBehaviour
     private Player _player;
     
     private RaycastHit _hit;
+    private Collider _lastCollider;
     
     private void Awake()
     {
@@ -18,21 +20,38 @@ public class PlayerInteraction : NetworkBehaviour
     {
         if (!IsOwner) return;
 
-        //Raycast testing code.
-        if (Physics.Raycast(_player.camera.transform.position, _player.camera.transform.forward, out var newHit, _player.interactionRaycastDistance))
+        if (Physics.Raycast(_player.camera.transform.position, _player.camera.transform.forward, out var hit, _player.interactionRaycastDistance))
         {
-            if (newHit.collider != _hit.collider)
+            if (hit.collider == _lastCollider) return; //If raycast hits the same object return.
+            
+            //Disable highlight on the last collider.
+            if (_lastCollider != null)
             {
-                newHit.collider.GetComponent<Renderer>().material.color = Color.blue;
-                if(_hit.collider != null) _hit.collider.GetComponent<Renderer>().material.color = Color.white;
-                _hit = newHit;
+                if (_lastCollider.TryGetComponent(out InteractableObject interact1))
+                {
+                    interact1.DisableHighlight();
+                }
             }
-            Debug.Log("Hit! " + _hit.collider);
+            
+            //Enable highlight on the new one.
+            if (hit.collider.TryGetComponent(out InteractableObject interact2))
+            {
+                interact2.EnableHighlight();
+            }
+            
+            _lastCollider = hit.collider;
         }
         else
         {
-            if(_hit.collider != null) _hit.collider.GetComponent<Renderer>().material.color = Color.white;
-            _hit = new RaycastHit();
+            if (_lastCollider == null) return;
+            
+            //If the raycast leaves the collider disable highlight.
+            if (_lastCollider.TryGetComponent(out InteractableObject interactableObject))
+            {
+                interactableObject.DisableHighlight();
+            }
+
+            _lastCollider = null;
         }
     }
 }

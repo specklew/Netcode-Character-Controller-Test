@@ -59,6 +59,8 @@ MonoBehaviour:
   maxPitch: 85
   minPitch: -85
   mouseSensitivity: 3
+  interactionRaycastDistance: 1.5
+  camera: {fileID: 0}
 --- !u!114 &1327919448537926457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95913a5914e8f1d4eb536b15b115780f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lastCollider: {fileID: 1327919448537926455}
 --- !u!1 &1327919448837406583
 GameObject:
   m_ObjectHideFlags: 0
