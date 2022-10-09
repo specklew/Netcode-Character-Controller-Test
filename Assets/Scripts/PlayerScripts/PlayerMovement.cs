@@ -22,7 +22,6 @@ namespace PlayerScripts
         private CharacterController _controller;
         private AudioListener _listener;
         private Player _player;
-        private PlayerManagerInput _input;
 
         private Animator _animator;
         private bool _hasAnimator;
@@ -44,11 +43,6 @@ namespace PlayerScripts
             _player = GetComponent<Player>();
             _animator = GetComponentInChildren<Animator>();
             _controller = GetComponent<CharacterController>();
-        }
-
-        private void OnEnable()
-        {
-            _input = FindObjectOfType<PlayerManagerInput>();
         }
 
         private void Update()
@@ -81,10 +75,10 @@ namespace PlayerScripts
 
         private void HandleInput()
         {
-            _inputLook = _input.look;
-            _inputSprint = _input.sprint;
-            _inputJump = _input.jump;
-            _inputMove = _input.move;
+            _inputLook = _player.input.look;
+            _inputSprint = _player.input.sprint;
+            _inputJump = _player.input.jump;
+            _inputMove = _player.input.move;
             //TODO: Add analog movement handling
         }
         

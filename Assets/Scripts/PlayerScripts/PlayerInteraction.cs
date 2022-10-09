@@ -1,40 +1,94 @@
+using System;
 using Unity.Netcode;
 using UnityEngine;
 
 namespace PlayerScripts
 {
-    public class PlayerInteraction : NetworkBehaviour, IClickable
+    [RequireComponent(typeof(Player))]
+    [RequireComponent(typeof(PlayerUIController))]
+    public class PlayerInteraction : NetworkBehaviour
     {
-        [SerializeField] private Transform cameraTransform;
-            
-        [SerializeField] private float raycastDistance = 1f;
+        private Player _player;
+        private PlayerUIController _uiController;
 
-        private void Update()
+        private String _interactionKey;
+
+        private RaycastHit _hit;
+        private Collider _lastCollider;
+
+        private void Awake()
         {
-            if (!IsLocalPlayer) return;
-            //if (Input.GetButtonDown("Fire1")) FireRaycast();
+            _player = GetComponent<Player>();
+            _uiController = GetComponent<PlayerUIController>();
+
+            var map = new PlayerInputActions();
+
+            _interactionKey = map.FindAction("Player/Interaction").bindings[0].path;
+            int index = _interactionKey.LastIndexOf(">/", StringComparison.Ordinal) + 2;
+            _interactionKey = _interactionKey.Substring(index, _interactionKey.Length - index);
+            _interactionKey = _interactionKey.ToUpper();
         }
 
-        private void FireRaycast()
+        void Update()
         {
-            if(Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, raycastDistance))
+            if (!IsOwner) return;
+
+            if (Physics.Raycast(_player.camera.transform.position, _player.camera.transform.forward, out var hit, _player.interactionRaycastDistance))
             {
-                if (hit.transform.TryGetComponent(out IClickable clickable))
-                    clickable.ClickedByPlayerServerRpc(OwnerClientId);
+                if (_player.input.interaction)
+                {
+                    InteractableObject interactableObject = hit.collider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+                    if (interactableObject != null)
+                    {
+                        interactableObject.Interact();
+                    }
+                }
+            
+                if (hit.collider == _lastCollider) return; //If raycast hits the same object return.
+            
+                //Disable highlight on the last collider.
+                if (_lastCollider != null)
+                {
+                    InteractableObject interact1 = _lastCollider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+                    if (interact1 != null)
+                    {
+                        HideInteractionEffects(interact1);
+                    }
+                }
+            
+                InteractableObject interact2 = hit.collider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+                if (interact2 != null)
+                {
+                    ShowInteractionEffects(interact2);
+                }
+            
+                _lastCollider = hit.collider;
+            }
+            else
+            {
+                if (_lastCollider == null) return;
+            
+                //If the raycast leaves the collider disable highlight.
+                InteractableObject interact = _lastCollider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
+                if (interact != null)
+                {
+                    HideInteractionEffects(interact);
+                }
+
+                _lastCollider = null;
             }
         }
-        
-        
-        [ServerRpc(RequireOwnership = false)]
-        public void ClickedByPlayerServerRpc(ulong interactingPlayerId)
+
+        private void ShowInteractionEffects(InteractableObject interactableObject)
         {
-            if(OwnerClientId == interactingPlayerId) return;
-            
-            GameplayManager gameplayManager = GameplayManager.Instance;
-            if (gameplayManager.CurrentlyTaggedPlayer == interactingPlayerId)
-            {
-                gameplayManager.SetNewIt(OwnerClientId);
-            }
+            interactableObject.EnableHighlight();
+            _uiController.ShowInteractionText("[ Press " + _interactionKey + " ]");
+        }
+
+        private void HideInteractionEffects(InteractableObject interactableObject)
+        {
+            interactableObject.DisableHighlight();
+            _uiController.HideInteractionText();
         }
     }
 }

@@ -14,7 +14,6 @@ public class InteractableObject : MonoBehaviour
 
     public void EnableHighlight()
     {
-
         foreach (Renderer r in _renderers)
         {
             Outline.OutlineRenderers.Add(r);
@@ -31,6 +30,7 @@ public class InteractableObject : MonoBehaviour
     
     public void Interact()
     {
+        Debug.Log("Interaction!");
         //TODO: Interaction mechanism.
     }
 }
