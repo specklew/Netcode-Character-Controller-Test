@@ -11,13 +11,13 @@ D:\Program Files\Unity\Editor\2021.3.9f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Users/macie/UnityTestProjs/netcode_char_controller_test
+C:/Users/macie/Programing/Unity/netcode_char_controller_test
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1081
-Successfully changed project path to: D:/Users/macie/UnityTestProjs/netcode_char_controller_test
-D:/Users/macie/UnityTestProjs/netcode_char_controller_test
+1033
+Successfully changed project path to: C:/Users/macie/Programing/Unity/netcode_char_controller_test
+C:/Users/macie/Programing/Unity/netcode_char_controller_test
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,11 +47,11 @@ D:/Users/macie/UnityTestProjs/netcode_char_controller_test
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 133.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 252.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Users/macie/UnityTestProjs/netcode_char_controller_test/Assets
+[Subsystems] Discovering subsystems at path C:/Users/macie/Programing/Unity/netcode_char_controller_test/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -63,42 +63,917 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Program Files/Unity/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002997 seconds.
+Registered in 0.004594 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 128.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 261.89 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.591 seconds
+- Completed reload, in  1.262 seconds
 Domain Reload Profiling:
-	ReloadAssembly (592ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (1262ms)
+		BeginReloadAssembly (109ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (436ms)
-			LoadAssemblies (70ms)
+		EndReloadAssembly (1060ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (88ms)
+			SetupTypeCache (164ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (284ms)
+			RebuildScriptCaches (126ms)
+			SetupLoadedEditorAssemblies (502ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (128ms)
+				RefreshPlugins (262ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (112ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009847 seconds.
+Registered in 0.012210 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\macie\Programing\Unity\netcode_char_controller_test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\macie\Programing\Unity\netcode_char_controller_test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 213.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.914 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2916ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (2581ms)
+			LoadAssemblies (381ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (532ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (167ms)
+			SetupLoadedEditorAssemblies (1266ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (213ms)
+				BeforeProcessingInitializeOnLoad (321ms)
+				ProcessInitializeOnLoadAttributes (485ms)
+				ProcessInitializeOnLoadMethodAttributes (233ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 8015 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 75 unused Assets / (3.8 MB). Loaded Objects now: 8474.
+Memory consumption went from 351.4 MB to 347.6 MB.
+Total: 7.145100 ms (FindLiveObjects: 0.476400 ms CreateObjectMapping: 1.054100 ms MarkObjects: 4.558000 ms  DeleteObjects: 1.055700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5173.155964 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66806495a0fe0ea51dfe1bddf4ff1b82') in 2.339063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.496535 seconds.
+  path: Assets/CartoonLowPolyCityLite/Materials/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(c8e0240e9684da34f8e797593fcd659e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite/Materials/CartoonLowPolyCityLite_01.mat using Guid(c8e0240e9684da34f8e797593fcd659e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410f16ac487fda96fa0561c25826fd41') in 0.117676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 125.183111 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40051c72d7d9cf61fa693da4e7177bd') in 0.031814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.061156 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cde8a16131a9ed595954658251cb0c1') in 0.028079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.139406 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a782843a8496e1c7f8737cb33df9a7') in 0.019007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.295553 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59eeeb62e73beedd12da26dec332c184') in 0.028010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.077114 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e6db7639dbe9b947b1e654e39e7a5e8') in 0.035766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.264157 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11284c777ba08466a771eae00a8ccafb') in 0.129000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.871234 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27940f1ca316385d9470ca807c02345') in 0.141588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.529468 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a3f8b7c52f26eab1d324563f345b317') in 0.057984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.351077 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f035534b68bce87b0e7c2e0115f03b24') in 0.041548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.381359 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fe77bdf1b325fa9a02bdeed3b73990') in 0.038419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 138.171713 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5f94582f48944c627b713185e18451') in 0.032834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 121.081566 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00163f809b2f9adbf55f3ac4aca17d9d') in 0.024140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.744791 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a11b10213cc91b4c1eeeeea6b061d4') in 0.019351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.862528 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387c551c47ab77b50bf0fc83d576c414') in 0.021250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.403740 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbc983a2346c0603a4bfd6f2fa25438') in 0.015337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.957090 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d097850fce856fd1c159255ce3371c') in 0.030461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.203688 seconds.
+  path: Assets/Shader Graphs_Outline.mat
+  artifactKey: Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader Graphs_Outline.mat using Guid(c83419d835db1ad4cbff92e43e943cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e20d1c9b622bd2af936240a33352d9') in 0.013069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 225.177473 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(98bc4f66885c81740b8b4c63c8bb7e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(98bc4f66885c81740b8b4c63c8bb7e25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0af0ac57788dd9aec9110be35fa3ecd') in 0.399533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.320854 seconds.
+  path: Assets/CartoonLowPolyCityLite/Materials
+  artifactKey: Guid(8a29a6828edfa244195503521271ff7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite/Materials using Guid(8a29a6828edfa244195503521271ff7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a351bf2252e37fa0caddcf5a51063378') in 0.005135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.863049 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18059a46410f55f1a4e81d1987180120') in 0.015777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.529951 seconds.
+  path: Assets/DepthOutline.shadergraph
+  artifactKey: Guid(fba2ece53e14fa045b393ce8f0dc0f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DepthOutline.shadergraph using Guid(fba2ece53e14fa045b393ce8f0dc0f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7d500eb6808c33c794244b7f6ceecc') in 0.007967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.523577 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f040800e82a70e2909e6b4a67b44d690') in 0.587664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.111040 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg
+  artifactKey: Guid(f88677df267a41d6be1e7a6133e7d227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg using Guid(f88677df267a41d6be1e7a6133e7d227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9229331e299db96ef1da301970b81c58') in 0.241634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg
+  artifactKey: Guid(8878a782f4334ecbbcf683b3ac780966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg using Guid(8878a782f4334ecbbcf683b3ac780966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1567526b2098181bf2b11ccd756ecf') in 0.039576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd
+  artifactKey: Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd using Guid(bb8dfcd263ad4eb383a33d74a720be6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a38caf45d244385260260d29f674ed') in 0.482537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png
+  artifactKey: Guid(a0fc465d6cf04254a2938578735e2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png using Guid(a0fc465d6cf04254a2938578735e2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbcd0b28988b338fd1663343d2feb9a') in 0.015501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg
+  artifactKey: Guid(602cb87b6a29443b8636370ea0751574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg using Guid(602cb87b6a29443b8636370ea0751574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb3228cffc1f24f7a040ffdff1dbb39') in 0.014212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd
+  artifactKey: Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd using Guid(2b5e9ae96c5644d8bae932f8b4ca68a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d88d1609785100fe00e354002fefba') in 0.031641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg
+  artifactKey: Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg using Guid(03d0538de6e24c0f819bfc9ce084dfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea781699424d8881c0d6cfd698c63929') in 0.012841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd
+  artifactKey: Guid(10c49fcd9c64421db7c0133e61e55f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd using Guid(10c49fcd9c64421db7c0133e61e55f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7cfdee71c1e9b831952ae16c374d1d') in 0.012393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg
+  artifactKey: Guid(6eb184de103d4b3f812b38561065192f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg using Guid(6eb184de103d4b3f812b38561065192f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8233d50a396c15769ddea1fb2cc5750c') in 0.012335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg
+  artifactKey: Guid(2ce5c55e85304b819a1826ecbc839aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg using Guid(2ce5c55e85304b819a1826ecbc839aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a3630c5f1f7155522544e73561273d7') in 0.012727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png
+  artifactKey: Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png using Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ccc34fa5f20e80ad55fdb283a190c81') in 0.014008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg
+  artifactKey: Guid(17c350171f7a3ca479f830547c66d187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg using Guid(17c350171f7a3ca479f830547c66d187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ab986b1cea33533982e8f12817c69f') in 0.012923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd
+  artifactKey: Guid(ed5290d8df18488780e2996b9b882f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd using Guid(ed5290d8df18488780e2996b9b882f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e213e893c7eec15bc209736d6a41d4e') in 0.013520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd
+  artifactKey: Guid(fd09957580ac4326916010f1f260975b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd using Guid(fd09957580ac4326916010f1f260975b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8f97bf3176e3ece70268318d03bddc') in 0.014519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c432caa1ee44f7868b7ebd438c157f67') in 0.014228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg
+  artifactKey: Guid(1cdc5b506b1a4a33a53c30669ced1f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg using Guid(1cdc5b506b1a4a33a53c30669ced1f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1f92f197f3424a05eb2309b97bf57a') in 0.013895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg
+  artifactKey: Guid(85ac55597b97403c82fc6601a93cf241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg using Guid(85ac55597b97403c82fc6601a93cf241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0479cf500937114c4be6e750ce138e') in 0.013256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png
+  artifactKey: Guid(c76d18757a194d618355f05f815cb0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png using Guid(c76d18757a194d618355f05f815cb0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3826252e7bd459f98f93b99bec83420e') in 0.023033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg
+  artifactKey: Guid(283f897e4925411ebbaa758b4cb13fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg using Guid(283f897e4925411ebbaa758b4cb13fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dbc5c03896ba713b1c9de9f804bf126') in 0.013851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd
+  artifactKey: Guid(7631f4eff8f74ed38eb3eb9db17134e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd using Guid(7631f4eff8f74ed38eb3eb9db17134e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7b1ede30a5ca8b532a5f50cac530d1') in 0.011206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/CartoonLowPolyCityLite/Textures/Texture_01.png
+  artifactKey: Guid(7d3c93d6e21f47d498be60cc5afb13e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite/Textures/Texture_01.png using Guid(7d3c93d6e21f47d498be60cc5afb13e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d64d45c6f5128838a4d1f29a98c343') in 0.014207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.751545 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915c93c7060e0572c22625431ccc38a4') in 0.716304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.587857 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc3d00ad1dfdd80f56a855ca4869730') in 0.051713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.993407 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee54785d00c566735c760199265e392') in 0.769350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.365627 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd4f7682eb8c34a8f35826304ab1f3b8') in 0.822909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 217.353061 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf9557862687a58f21bed267e0db1a0') in 0.618000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.405057 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f048f3148e54ed93bf6c05facb58901d') in 0.640513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.908335 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5377e8d99e364f6daab281493e6043') in 0.619755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.558297 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77868301bdb19c639b004a2959a789d5') in 0.762021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 95.885895 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c87e4cd84eed4cac528f096ce68e481') in 0.670437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.380417 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8893ffa179f8d221f45f927292293ea2') in 0.787600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 57.713613 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0274bc8974634899b6beee73366a1c') in 0.756660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.077249 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fdf7cf1edb82d1211aab73c924be475') in 0.603136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.741179 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9a11fa9fc535deff53fa98b9616694') in 0.573577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.871838 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d8678da2f3a8ffdcef14e3e8dd8760') in 0.645017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.012219 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e2d6f4913c251825d6ebf6ca1e92f4') in 0.652835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.032685 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4b111d7fe522c4c577cfa69428bf77') in 0.838430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.869719 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb7f767adf694a8bbefe4e325ed5e29') in 0.661013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.067081 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e4ec93e3623a65a574bb71ca0dfd7c') in 0.230113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.138908 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c50c3cef74541d4aa7face1a21ab5d') in 0.618996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.404040 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e6244e3f7f357f389cbf26cd23e7e9') in 0.239072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.730633 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16add2938e3853e715caea00be389f0') in 0.816726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.408390 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'decb60758f90933dd03cd946e314d05f') in 0.727757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2164.811798 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660531252073bcec85afc66394aa5dac') in 0.501037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.787374 seconds.
+  path: Assets/Outline.shadergraph
+  artifactKey: Guid(fcac670899f77414f80849932982590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Outline.shadergraph using Guid(fcac670899f77414f80849932982590a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31a5fcc17f586cfb649ab6bf1f8f75f') in 0.010835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.073012 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88a24535c2216608af72b521bdcf058') in 0.487290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3563.618174 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afb9fa335ec82ead13793fe92818313') in 0.456744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.074569 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1accdaaa77ecff0f76795ca31b1e9322') in 0.449001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.884088 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f0cb95b1844f82b8b39ec4abe99135') in 0.441158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.061249 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc51ebf9a16240ab35f57f8060990a5') in 0.516120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.818493 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2d2683e608ca05d9e9206a6e614a0e') in 0.510863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.137373 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18a99b6808fdaec715d3776877a075d') in 0.422061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.662078 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97dacec203ebab772ef0f9516180bd8') in 0.498547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.030349 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6986b98c34be3d8fa6e9a3c8bfb15896') in 0.657871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 108.063857 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c6f622daa965d8b0bdbe4ed4e50cb2') in 0.477189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.012667 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ba4fad1b9eb52ba88daec77602bfe5') in 0.171397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1982.765429 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a820c2fb44ae3f59b4ec9160d7eb3e9d') in 0.540072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 137.496392 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603b1e69b1f1c4f0310d8050da27689b') in 0.495380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 598.473827 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c60e548d41239cb0e7d0dce7df40a7') in 0.534294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.857227 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a036cba9e6daede96ee7ab7cc79e6292') in 0.464838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.626733 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12448e91944b043f9cc2321ebac9f1b9') in 0.458918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.500842 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a887709e9ca6a02f86fefadfb2d326ac') in 0.499538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 120.600240 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd626eef0706a4548273743130379c378') in 0.516398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 292.312581 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 270 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 270 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 270 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 270 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 6725 (on d3d11)
+
+Compiling Subshader: 0, Pass: GBuffer, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DEBUG_DISPLAY DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 270 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 6725 (on d3d11)
+
+Compiling Subshader: 0, Pass: GBuffer, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DEBUG_DISPLAY DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+ -> (artifact id: '1509071222fdfe63ca08983485b24fa6') in 0.177954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.655352 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 266 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 266 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 266 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 266 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 6382 (on d3d11)
+
+Compiling Subshader: 0, Pass: GBuffer, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DEBUG_DISPLAY DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 266 (on d3d11)
+
+Compiling Subshader: 0, Pass: ShadowCaster, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PASS_SHADOWCASTER UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: INSTANCING_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+Shader error in 'Shader Graphs/DepthOutline': redefinition of '_CameraDepthTexture' at line 6382 (on d3d11)
+
+Compiling Subshader: 0, Pass: GBuffer, Vertex program with _BLENDMODE_OFF _REFRACTION_OFF
+Platform defines: SHADER_API_DESKTOP UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DEBUG_DISPLAY DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON INSTANCING_ON LIGHTMAP_ON SHADER_API_GLES30 UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_VIRTUAL_TEXTURING _ADD_PRECOMPUTED_VELOCITY _BLENDMODE_ADD _BLENDMODE_ALPHA _BLENDMODE_PRE_MULTIPLY _DOUBLESIDED_ON _REFRACTION_PLANE _REFRACTION_SPHERE _REFRACTION_THIN _SURFACE_TYPE_TRANSPARENT _TRANSPARENT_WRITES_MOTION_VEC
+ -> (artifact id: '2c86f84441ff3bb21d62d7fc4c2a4e2b') in 0.139463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2881.825454 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30c3c7303bd1521279fc1b367d1ce21') in 0.270415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.400430 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a707c50c3c7edfd5df5032a0fc164ec') in 0.526881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.961225 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bd879b2a0fb9e0db7b22487bb49b04') in 0.516680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.934006 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f108f5f70aebec690b359377643a2375') in 0.556718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.165799 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5bbf1855bf9aaf8c235e1bdf50a3bf') in 0.168600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.156055 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '820a9095a55b262a081e90682d0eff3b') in 0.569262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 67.443895 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095dcf48ca719e3853ceb30f86aef218') in 0.521437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.375881 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cb000d9741a3dd9c5ad141f55c7d69') in 0.320917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.737913 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af0c81108f3972f78e75ba8d9a15f75f') in 0.164719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.886214 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fce3874087dcc1224ecda0aa5fcc82a') in 0.630959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.649696 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0a0885176461458ff82c8df6e0af8c') in 0.421279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.040856 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8278a16b978bd46f9ec4a0b44a562bed') in 0.503219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.664092 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2bb61dd8603f853644936449e585a6') in 0.170477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.486168 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0e51b286854b463c7b31b96e625482') in 0.503281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 89.926507 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f841946b7fd686f903cbd206e813216') in 0.471631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.753327 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0329bc0123bc9c523a858ad33a9098b') in 0.508210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.559470 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c803200e3ccc023d56043f5694bc07d6') in 0.192299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.039952 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d756a32110f1eee3cbd01a005c20c6') in 0.536562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.590497 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a657cbd0478aeffda0eff1edef54db') in 0.529185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.894211 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81175f18c84fe21673e0570e38d64193') in 0.531420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.194037 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc05b6f26ccd56ab125a34d30e1070e') in 0.514410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.302949 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec278d514a1d8704f9a39ddf64695174') in 0.517939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 189.118934 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bab855a1709ce7be31c7f4a4d7e93b') in 0.494024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 91.200116 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278b6f0b5bd68e7e641eae9f687059a7') in 0.533188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.404791 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561058f4a18a57d67255821050c1b502') in 0.478238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.334951 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8848ad8a8ce85a994ca5a5dc52b314ac') in 0.553074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.731017 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f831e9f8f7286d48335decc5beef8506') in 0.168364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.282240 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92246d81f70fb410b7cdb31102099fa') in 0.488159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.206280 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612dd81713d8de18fc2a0827b0bbbbc5') in 0.524237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.416569 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b594408ca94cefeca888ea292cc4d7') in 0.423771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.398083 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462483259ef7d64e88e03a905972d3a6') in 0.514997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.385231 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48adb10bd18347e0a5021584264d171c') in 0.473506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.731325 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da94b1940842689d2e47c6303b463086') in 0.404724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.177462 seconds.
+  path: Assets/Outline.shader
+  artifactKey: Guid(1c27d6a7733dd434c9e20c62dd244a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Outline.shader using Guid(1c27d6a7733dd434c9e20c62dd244a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa42ea63d2ec5619e8d4fb4c8aef0522') in 0.006806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 387.422894 seconds.
+  path: Assets/DepthOutline.shadergraph
+  artifactKey: Guid(fba2ece53e14fa045b393ce8f0dc0f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DepthOutline.shadergraph using Guid(fba2ece53e14fa045b393ce8f0dc0f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aeb3abe8f361557349fdb617e91caac') in 0.006741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.561551 seconds.
+  path: Assets/CartoonLowPolyCityLite_01.mat
+  artifactKey: Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCityLite_01.mat using Guid(28fd871b729abae4baa23461ef4488e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723c5101b106dbc8c24e3c40b6d28e08') in 0.022254 seconds 
