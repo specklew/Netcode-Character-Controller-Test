@@ -11,7 +11,7 @@ namespace PlayerScripts
         private Player _player;
         private PlayerUIController _uiController;
 
-        private String _interactionKey;
+        private string _interactionKey;
 
         private RaycastHit _hit;
         private Collider _lastCollider;
@@ -21,10 +21,12 @@ namespace PlayerScripts
             _player = GetComponent<Player>();
             _uiController = GetComponent<PlayerUIController>();
 
-            var map = new PlayerInputActions();
+            PlayerInputActions map = new();
 
             _interactionKey = map.FindAction("Player/Interaction").bindings[0].path;
+            
             int index = _interactionKey.LastIndexOf(">/", StringComparison.Ordinal) + 2;
+            
             _interactionKey = _interactionKey.Substring(index, _interactionKey.Length - index);
             _interactionKey = _interactionKey.ToUpper();
         }
@@ -40,6 +42,7 @@ namespace PlayerScripts
                     InteractableObject interactableObject = hit.collider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
                     if (interactableObject != null)
                     {
+                        if(interactableObject.strategy.singleUse) HideInteractionEffects(interactableObject);
                         interactableObject.Interact();
                     }
                 }
