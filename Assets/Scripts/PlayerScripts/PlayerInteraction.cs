@@ -1,4 +1,5 @@
 using System;
+using Interaction;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -42,7 +43,6 @@ namespace PlayerScripts
                     InteractableObject interactableObject = hit.collider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
                     if (interactableObject != null)
                     {
-                        if(interactableObject.strategy.singleUse) HideInteractionEffects(interactableObject);
                         interactableObject.Interact();
                     }
                 }
