@@ -3,7 +3,7 @@ using Unity.Netcode;
 
 namespace SceneManagement
 {
-    public class LobbyButtonScript : NetworkBehaviour, IClickable
+    public class LobbyButtonScript : NetworkBehaviour
     {
         private bool _changeStarted;
 

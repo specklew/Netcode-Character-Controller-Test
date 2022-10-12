@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace PlayerScripts
 {
-    [RequireComponent(typeof(PlayerMovement))]
     public class Player : NetworkBehaviour
     {
         [Header("Movement")] [Tooltip("Move speed of the character in m/s")]
@@ -25,15 +24,21 @@ namespace PlayerScripts
         public float maxPitch = 85f;
         public float minPitch = -85f;
         public float mouseSensitivity = 3f;
+
+        [Header("Interaction Settings")] 
+        public float interactionRaycastDistance = 1.5f;
         
-        private Animator _animator;
-        private Camera _camera;
+        [HideInInspector] public new Camera camera;
+        [HideInInspector] public PlayerManagerInput input;
+        
         private CharacterController _controller;
         private AudioListener _listener;
 
         public override void OnNetworkSpawn()
         {
-            _camera = GetComponentInChildren<Camera>();
+            camera = GetComponentInChildren<Camera>();
+            input = FindObjectOfType<PlayerManagerInput>();
+            
             _listener = GetComponentInChildren<AudioListener>();
             _controller = GetComponent<CharacterController>();
 
@@ -41,29 +46,13 @@ namespace PlayerScripts
             
             if (IsOwner) return;
 
-            _camera.enabled = false;
+            camera.enabled = false;
             Destroy(_listener);
 
             if (IsServer) return;
             
-            Destroy(_camera.gameObject);
+            Destroy(camera.gameObject);
             Destroy(_controller);
-        }
-
-        private void Update()
-        {
-            UpdateServer();
-            UpdateClient();
-        }
-
-        private void UpdateServer()
-        {
-            if(!IsServer) return;
-        }
-        
-        private void UpdateClient()
-        {
-            if(!IsClient) return;
         }
     }
 }

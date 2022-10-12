@@ -28,13 +28,13 @@ namespace SceneManagement
             if (!_isFrozen)
             {
                 gameObject.GetComponent<CharacterController>().enabled = false;
-                gameObject.GetComponent<CharacterControllerPlayerMovement>().enabled = false;
+                //gameObject.GetComponent<CharacterControllerPlayerMovement>().enabled = false;
                 _isFrozen = true;
             }
             else
             {
                 gameObject.GetComponent<CharacterController>().enabled = true;
-                gameObject.GetComponent<CharacterControllerPlayerMovement>().enabled = true;
+                //gameObject.GetComponent<CharacterControllerPlayerMovement>().enabled = true;
                 
                 _isFrozen = false;
             }
