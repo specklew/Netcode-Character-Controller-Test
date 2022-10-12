@@ -6,13 +6,10 @@ namespace Interaction
     [Serializable]
     public class UseStrategy : InteractionStrategy
     {
-        public UseStrategy(InteractableObject interactableObject) : base(interactableObject)
-        {
-        }
-    
         public override void PerformInteraction()
         {
-            Debug.Log("Used " + InteractableObject.name + "!");
+            //TODO Send message to a script that will handle the mechanics.
+            Debug.Log("Used " + gameObject + "!");
         }
     }
 }

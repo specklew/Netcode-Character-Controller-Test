@@ -901,7 +901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181d86c6be2da1e4ebbacc4067c13f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strategy: 0
 --- !u!114 &1268420935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,7 +1020,7 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &1557837359
+--- !u!114 &1557837360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1033,7 +1032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181d86c6be2da1e4ebbacc4067c13f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strategy: 1
 --- !u!114 &1557837361
 MonoBehaviour:
   m_ObjectHideFlags: 0

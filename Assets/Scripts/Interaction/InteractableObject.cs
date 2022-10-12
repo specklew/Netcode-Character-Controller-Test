@@ -1,24 +1,19 @@
-using System.Collections.Generic;
 using Unity.Netcode;
-using UnityEditor;
 using UnityEngine;
 
 namespace Interaction
 {
-    [ExecuteAlways]
     [RequireComponent(typeof(NetworkObject))]
     public class InteractableObject : NetworkBehaviour
     {
-        public enum Strategies
+        private InteractionStrategy _interactionStrategy;
+
+        private void Awake()
         {
-            Pickup,
-            Use
+            _interactionStrategy = GetComponent(typeof(InteractionStrategy)) as InteractionStrategy;
+            if(_interactionStrategy == null) Debug.LogError("The interaction strategy has not been added to " + gameObject + "!");
         }
 
-        public Strategies strategy;
-        
-        //[SerializeReference] public List<InteractionStrategy> strategies = new();
-        
         public void EnableHighlight()
         {
             ScriptingHelper.SetLayerRecursively(gameObject, LayerMask.NameToLayer("Outline"));
@@ -47,10 +42,7 @@ namespace Interaction
         private void InteractClientRPC()
         {
             Debug.Log("Interaction on client!");
-            // foreach (InteractionStrategy strategy in strategies)
-            // {
-            //     strategy.PerformInteraction();
-            // }
+            _interactionStrategy.PerformInteraction();
         }
     }
 }
