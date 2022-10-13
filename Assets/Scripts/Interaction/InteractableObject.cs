@@ -1,3 +1,4 @@
+using PlayerScripts;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -27,22 +28,28 @@ namespace Interaction
         public void Interact()
         {
             Debug.Log("Interaction!");
-            InteractServerRPC();
+            if(_interactionStrategy.IsSingleUse) NetworkManager.LocalClient.PlayerObject.gameObject.GetComponent<PlayerInteraction>().HideInteractionEffects(this);
+            InteractServerRPC(OwnerClientId);
+        }
+
+        public InteractionStrategy GetInteractionStrategy()
+        {
+            return _interactionStrategy;
         }
 
     
-        [ServerRpc]
-        private void InteractServerRPC()
+        [ServerRpc(RequireOwnership = false)]
+        private void InteractServerRPC(ulong playerId)
         {
             Debug.Log("Interaction on server!");
-            InteractClientRPC();
+            InteractClientRPC(playerId);
         }
     
         [ClientRpc]
-        private void InteractClientRPC()
+        private void InteractClientRPC(ulong playerId)
         {
             Debug.Log("Interaction on client!");
-            _interactionStrategy.PerformInteraction();
+            _interactionStrategy.PerformInteraction(playerId);
         }
     }
 }

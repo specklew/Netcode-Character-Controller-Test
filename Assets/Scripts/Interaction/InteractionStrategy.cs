@@ -5,6 +5,7 @@ namespace Interaction
     [System.Serializable]
     public abstract class InteractionStrategy : MonoBehaviour
     {
-        public abstract void PerformInteraction();
+        public bool IsSingleUse { get; protected set; }
+        public abstract void PerformInteraction(ulong playerId);
     }
 }

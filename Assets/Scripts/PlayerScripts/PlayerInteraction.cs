@@ -5,8 +5,7 @@ using UnityEngine;
 
 namespace PlayerScripts
 {
-    [RequireComponent(typeof(Player))]
-    [RequireComponent(typeof(PlayerUIController))]
+    [RequireComponent(typeof(PlayerUIController)), RequireComponent(typeof(Player))]
     public class PlayerInteraction : NetworkBehaviour
     {
         private Player _player;
@@ -32,7 +31,7 @@ namespace PlayerScripts
             _interactionKey = _interactionKey.ToUpper();
         }
 
-        void Update()
+        private void Update()
         {
             if (!IsOwner) return;
 
@@ -43,7 +42,7 @@ namespace PlayerScripts
                     InteractableObject interactableObject = hit.collider.GetComponentInParent(typeof(InteractableObject)) as InteractableObject;
                     if (interactableObject != null)
                     {
-                        interactableObject.Interact();
+                        PlayerInteractWithObject(interactableObject);
                     }
                 }
             
@@ -82,13 +81,18 @@ namespace PlayerScripts
             }
         }
 
+        private void PlayerInteractWithObject(InteractableObject interactableObject)
+        {
+            interactableObject.Interact();
+        }
+
         private void ShowInteractionEffects(InteractableObject interactableObject)
         {
             interactableObject.EnableHighlight();
             _uiController.ShowInteractionText("[ Press " + _interactionKey + " ]");
         }
 
-        private void HideInteractionEffects(InteractableObject interactableObject)
+        public void HideInteractionEffects(InteractableObject interactableObject)
         {
             interactableObject.DisableHighlight();
             _uiController.HideInteractionText();

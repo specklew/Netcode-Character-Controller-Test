@@ -45,13 +45,14 @@ namespace PlayerScripts
             _controller = GetComponent<CharacterController>();
         }
 
+        public override void OnNetworkSpawn()
+        {
+            if(!IsClient) return;
+            _headRotation.OnValueChanged += OnHeadRotationChanged;
+        }
+
         private void Update()
         {
-            if (IsServer)
-            {
-                UpdateServer();    
-            }
-            
             if(!IsOwner) return;
             
             HandleInput();
@@ -68,9 +69,10 @@ namespace PlayerScripts
 
         #region Update functions
 
-        private void UpdateServer()
+        private void OnHeadRotationChanged(float previous, float current)
         {
-            playerHead.localRotation = Quaternion.Euler(_headRotation.Value, 0, 0);
+            Debug.Log("Updating player head rotation to = " + current);
+            playerHead.localRotation = Quaternion.Euler(current, 0, 0);
         }
 
         private void HandleInput()
